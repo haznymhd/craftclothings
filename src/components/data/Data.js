@@ -95,7 +95,7 @@ export const list = [
     id: 9,
     cover: "../images/list/D005.jpg",
     name: "Slytherin ",
-    category: "Code - D009",
+    category: "Code - D010",
   },
   
 ]
