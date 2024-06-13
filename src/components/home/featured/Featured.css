@@ -1,12 +1,32 @@
+
+.container11 {
+  padding: 5px; /* Adjust padding as needed */
+  background-color: #1d2636; /* Background color for the recent design section */
+  border-radius: 0px; /* Add border-radius for rounded corners */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Add box-shadow for a subtle depth effect */
+  color: #ffffff;
+  text-align: center;
+  font-size: xx-large;
+}
+.container111 {
+  padding: 5px; /* Adjust padding as needed */
+  background-color: #1d2636; /* Background color for the recent design section */
+  color: #afafaf;
+  text-align: center;
+  font-size: small;
+}
 .featured .box {
-  box-shadow: 0 0 20px 0 rgb(112 121 138 / 18%);
+  box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.18);
   border-radius: 6px;
   text-align: center;
   padding: 30px;
   cursor: pointer;
+  height: 20vh;
 }
 .featured img {
   width: 65px;
   height: 65px;
   margin: auto;
 }
+
+

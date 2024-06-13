@@ -1,67 +1,195 @@
 .hero {
-  background-image: url("../../../../public/images/banner6.jpg");
+  background-image: url("../../../../public/images/banner2b.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   height: 50vh;
   width: 100%;
 }
+
 .hero .container {
-  padding-top: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
 }
-.hero h1 {
-  color: #a50b0b;
-  font-size: 60px;
-  font-size: xxx-large;
-  -webkit-text-stroke: 1px #ffffff; 
-}
-.hero p {
-  color: #fff;
-  opacity: 0.8;
-}
-form {
-  background-color: #fff;
-  border-radius: 5px;
-  margin-top: 50px;
-  padding: 0 20px;
-}
-form input {
-  padding: 10px;
+
+.hero .box {
   width: 100%;
-  border: 1px solid rgba(128, 128, 128, 0.2);
-  margin-top: 5px;
-  border-radius: 5px;
+  max-width: 600px;
+  text-align: center;
 }
-form span {
-  font-size: 14px;
-  color: grey;
+
+.hero .title {
+  position: relative;
+  margin-bottom: 20px;
 }
-input::placeholder {
-  font-size: 17px;
-  color: black;
+
+.hero .title .block {
+  width: 0%;
+  height: 100%;
+  background: #ffb510;
+  position: absolute;
+  animation: mainBlock 2s cubic-bezier(.74, .06, .4, .92) forwards;
 }
-form .box {
-  padding: 15px;
-  border-left: 1px solid rgba(128, 128, 128, 0.2);
+
+.hero .title h1 {
+  font-family: 'Poppins', sans-serif;
+  color: #ffffff;
+  font-size: 32px;
+  position: relative;
+  opacity: 0;
+  animation: mainFadeIn 2s forwards;
+  animation-delay: 1.6s;
+  -webkit-text-stroke: 1px #000000; 
+  font-weight: bold;
 }
-form .box:nth-child(1) {
-  border-left: none;
+
+.hero .title h1 span {
+  width: 0px;
+  height: 0px;
+  border-radius: 50%;
+  background: #ffb510;
+  animation: popIn 0.8s cubic-bezier(.74, .06, .4, .92) forwards;
+  animation-delay: 2s;
+  position: absolute;
+  bottom: 13px;
+  right: -12px;
 }
-form h4 {
-  font-weight: 500;
+
+.hero .role {
+  position: relative;
 }
-@media screen and (max-width: 800px) {
-  .hero .container {
-    padding-top: 30%;
+
+.hero .role .block {
+  width: 0%;
+  height: 100%;
+  background: #a30c0c;
+  position: absolute;
+  animation: secBlock 2s cubic-bezier(.74, .06, .4, .92) forwards;
+  animation-delay: 2s;
+}
+
+.hero .role p {
+  font-weight: 400;
+  font-family: 'Lato', sans-serif;
+  color: #5a5a5a;
+ /* -webkit-text-stroke: .5px #000000; */
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  opacity: 0;
+  animation: secFadeIn 2s forwards;
+  animation-delay: 3.2s;
+  font-weight: bolder;
+  
+}
+.hero .role p {
+  font-weight: 400;
+  font-family: 'Lato', sans-serif;
+  color: #5a5a5a;
+ /* -webkit-text-stroke: .5px #000000; */
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  opacity: 0;
+  animation: secFadeIn 2s forwards;
+  animation-delay: 3.2s;
+  font-weight: bolder;
+  
+}
+.p2 {
+  font-weight: 400;
+  font-family: 'Lato', sans-serif;
+  color: #5a5a5a;
+ /* -webkit-text-stroke: .5px #000000; */
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  opacity: 0;
+  animation: secFadeIn 2s forwards;
+  animation-delay: 3.2s;
+  font-weight: bolder;
+  
+}
+@keyframes mainBlock {
+  0% {
+    width: 0%;
+    left: 0;
   }
-  form {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  form .box {
-    border-left: none;
-  }
-  form input {
+  50% {
     width: 100%;
+    left: 0;
+  }
+  100% {
+    width: 0;
+    left: 100%;
+  }
+}
+
+@keyframes secBlock {
+  0% {
+    width: 0%;
+    left: 0;
+  }
+  50% {
+    width: 100%;
+    left: 0;
+  }
+  100% {
+    width: 0;
+    left: 100%;
+  }
+}
+
+@keyframes mainFadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes popIn {
+  0% {
+    width: 0px;
+    height: 0px;
+    background: #e9d856;
+    opacity: 0;
+  }
+  50% {
+    width: 10px;
+    height: 10px;
+    background: #e9d856;
+    opacity: 1;
+    bottom: 45px;
+  }
+  65% {
+    width: 7px;
+    height: 7px;
+    bottom: 0px;
+    width: 15px;
+  }
+  80% {
+    width: 10px;
+    height: 10px;
+    bottom: 20px;
+  }
+  100% {
+    width: 7px;
+    height: 7px;
+    background: #e9d856;
+    opacity: 1;
+    bottom: 13px;
+  }
+}
+
+@keyframes secFadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }

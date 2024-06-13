@@ -39,7 +39,7 @@ header .toggle {
     padding: 0;
   }
   header img {
-    margin-top: 30px;
+    margin-top: 0px;
   }
   header .button {
     display: none;
@@ -48,11 +48,11 @@ header .toggle {
     display: none;
   }
   header .toggle {
-    display: block;
-    margin-top: 20px;
+    display: flex;
+    
   }
   header .small {
-    position: absolute;
+    position: absolute; 
     top: 10vh;
     left: 0;
     width: 100%;
@@ -65,3 +65,9 @@ header .toggle {
     color: #fff;
   }
 }
+
+@media screen and (max-width: 800px){
+  
+  
+
+ }

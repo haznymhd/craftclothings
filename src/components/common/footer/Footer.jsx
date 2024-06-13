@@ -1,5 +1,5 @@
-import React from "react"
-import "./footer.css"
+import React from "react";
+import "./footer.css";
 
 const Footer = () => {
   const handleWhatsAppClick = () => {
@@ -17,9 +17,11 @@ const Footer = () => {
           <div className='send flex'>
             <div className='text'>
               <h1>Do You Have Questions ?</h1>
-              <p>Click the button to chat with me in whatsapp</p>
+              <p>Click the button to chat with us on WhatsApp</p>
+              <button className="whatsapp-button" onClick={handleWhatsAppClick}>
+                Chat on WhatsApp
+              </button>
             </div>
-            <button className='btn5' onClick={handleWhatsAppClick}>whatsapp</button>
           </div>
         </div>
       </section>
@@ -39,6 +41,6 @@ const Footer = () => {
       </div>
     </>
   );
-}
+};
 
 export default Footer;

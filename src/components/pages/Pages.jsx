@@ -4,8 +4,8 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom"
 import Home from "../home/Home"
 import Footer from "../common/footer/Footer"
 import About from "../about/About"
-import Contact from "../contact/Contact"
 import RecentPage from "../home/recent/RecentPage"
+import Team from "../home/team/Team"
 
 
 const Pages = () => {
@@ -16,8 +16,8 @@ const Pages = () => {
         <Switch>
           <Route exact path='/' component={Home} />
           <Route exact path='/about' component={About} />
-          <Route exact path='/contact' component={Contact} />
           <Route exact path='/recentpage' component={RecentPage} />
+          <Route exact path='/team' component={Team} />
 
         </Switch>
         <Footer />
