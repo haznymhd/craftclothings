@@ -18,7 +18,7 @@ const RecentCard = ({ limit }) => {
   };
 
   const handleWhatsAppClick = (name, category, image) => {
-    const message = `I'm interested in ${name} (${category}). Please provide more information. Here is the image: ${image}`;
+    const message = `I'm interested in ${name} (${category}). Please provide more information.`;
     const whatsappUrl = `https://api.whatsapp.com/send?phone=+94717777668&text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, "_blank");
   };
