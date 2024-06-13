@@ -1,17 +1,19 @@
 .hero {
-  background-image: url("../../../../public/images/banner.png");
+  background-image: url("../../../../public/images/banner6.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  height: 90vh;
+  height: 50vh;
   width: 100%;
 }
 .hero .container {
-  padding-top: 15%;
+  padding-top: 10%;
 }
 .hero h1 {
-  color: #fff;
+  color: #a50b0b;
   font-size: 60px;
+  font-size: xxx-large;
+  -webkit-text-stroke: 1px #ffffff; 
 }
 .hero p {
   color: #fff;
