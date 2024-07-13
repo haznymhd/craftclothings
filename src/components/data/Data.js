@@ -46,6 +46,12 @@ export const featured = [
 ]
 export const list = [
   {
+    id: 9,
+    cover: "../images/list/D009.jpg",
+    name: "BCAS CAMPUS Cricket Carnival",
+    category: "Code - D009",
+  },
+  {
     id: 1,
     cover: "../images/list/D001.jpg",
     name: "Chesta Foodball club jersey",
@@ -80,7 +86,7 @@ export const list = [
     name: "Eagle with dharmachakra  ",
     category: "Code - D006",
   },  {
-    id: 4,
+    id: 7,
     cover: "../images/list/D007.jpg",
     name: "Gryffindor  ",
     category: "Code - D007",
@@ -90,14 +96,7 @@ export const list = [
     cover: "../images/list/D008.jpg",
     name: "Slytherin ",
     category: "Code - D008",
-  },
-  {
-    id: 9,
-    cover: "../images/list/D005.jpg",
-    name: "Slytherin ",
-    category: "Code - D010",
-  },
-  
+  },  
 ]
 export const team = [
   {
